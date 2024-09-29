@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    width: 100%;
+}
+
+.theTop {
+    margin-top: 10px;
+}
+
+.theTop h2 {
+    color: #fff;
+    font-weight: 600;
+}
+
+.DM {
+    display: none;
+}
+
+.shh {
+    display: block;
+}
+
+.theTop h3 {
+    color: #fff;
+    font-weight: 500;
+}
+
+.title {
+    margin-top: 20px;
+    padding: 3px;
+    background-color: #111;
+    outline: none;
+    border: 1px solid black;
+    color: azure;
+    border-radius: 7px;
+}
+
+.four {
+    margin-top: 20px;
+}
+
+.number1 {
+    background-color: #111;
+    color: azure;
+    padding: 3px; /* تم إزالة التكرار هنا */
+    border: 1px solid black;
+    width: 95%;
+    margin-left: 8px;
+    padding-left: 3px;
+    outline: none;
+    position: relative;
+}
+
+.flex-four {
+    margin-top: 20px;
+}
+
+.total {
+    border-radius: 3px;
+    padding: 3px;
+    color: #fff;
+    position: absolute;
+    left: -4px;
+}
+
+.end {
+    width: 80%;
+}
+
+.number2 {
+    background-color: #111;
+    color: azure;
+    padding: 3px; /* تم إزالة التكرار هنا */
+    border: 1px solid black;
+    width: 100%;
+    margin-left: 15px;
+    padding-left: 8px; /* تم تغيير القيمة هنا */
+    outline: none;
+    margin-top: 10px;
+    border-radius: 7px;
+}
+
+.under {
+    margin-top: 15px;
+}
+
+.botn {
+    background-color: #470053;
+    color: #fff;
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 70px;
+}
+.botnN{
+    background-color: #470053;
+    color: #fff;
+    width: 60%;
+    margin-top: 10px;
+    
+}
+
+.botn2 {
+    background-color: #470053;
+    color: #fff;
+    width: 70%;
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+small::after{
+    
+}
+.thead-dark {
+    background-color: #111;
+}
+
+input:focus {
+    background-color: #000;
+    transform: scale(1.05); /* تم تقليل الحجم لتجنب مشاكل التخطيط */
+    transition: 0.3s; /* تم تسريع الانتقال */
+}
+
+.total::before {
+    content: "Total:";
+}
+
+td {
+    color: #fff;
+}
+
+th {
+    color: #fff;
+}
+
+td button {
+    background-color: #470053;
+    padding: 5px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.Handmade {
+    background-color: #470053;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    outline: none;
+    margin: 20px 0;
+    margin-left: 120px;
+    width: 70%;
+    border-radius: 15px;
+    font-weight: 500;
+}
+
+#DELETEALL {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 50px;
+}
+#btnpapa{
+    margin-top: 20px !important;
+}
+.Handmade:hover {
+    background-color: #6c0d7d;
+    letter-spacing: 0.5mm; /* تم تقليل المسافة بين الحروف لتكون أسرع */
+    transition: 0.3s; /* تم تسريع الانتقال */
+}
+
+body.TOGGLE {
+    background-color: #fff !important; /* تغيير الخلفية إلى اللون الأسود */
+    color: #001 !important; /* تغيير لون النص */
+}
+body.TOGGLE  h2{
+    background-color: #fff !important; /* تغيير الخلفية إلى اللون الأسود */
+    color: #001 !important; /* تغيير لون النص */
+}
+body.TOGGLE  th{
+    background-color: #000 !important; /* تغيير الخلفية إلى اللون الأسود */
+    color: #fff !important; /* تغيير لون النص */
+}
+body.TOGGLE  h3{
+    background-color: #fff !important; /* تغيير الخلفية إلى اللون الأسود */
+    color: #001 !important; /* تغيير لون النص */
+}
+body.TOGGLE  td{
+    background-color: #fff !important; /* تغيير الخلفية إلى اللون الأسود */
+    color: #001 !important; /* تغيير لون النص */
+    font-weight: 700;
+}
+/* Responsive For Mopile &Tablets */
+@media (min-width:769px) and (max-width:1024px){
+  
+    
+
+}
+/* لتنسيق الجداول العادية */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* لجعل الزرار يكونوا جنب بعض بشكل مناسب */
+td button {
+    margin-right: 5px;
+}
+
+/* responsive styling for small screens (less than 768px) */
+@media (max-width: 768px) {
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+        margin-top: 30px;
+    }
+
+    /* إخفاء الـ head الخاص بالجدول */
+    thead {
+        display: none;
+    }
+
+    /* تنسيق كل صف بحيث يبقى عمودي */
+    tr {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #000 !important;
+    }
+
+    /* تنسيق الـ ID وغيره من العناصر كأنهم عنوان لكل صف */
+    td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+    td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 50%;
+    }
+  
+}
+  #small{
+        display: none;
+    }
+    .NNNNN {
+        display: flex; /* استخدام flexbox */
+        justify-content: center; /* محاذاة العناصر في المنتصف أفقياً */
+        align-items: center; /* محاذاة العناصر في المنتصف عمودياً */
+       margin: auto;
+    }
+    .NOWOOW{
+        background-color: #470053;
+        color: #fff;
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 50px;
+        padding: 5px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+
+    }
+   
+
+    .table {
+        border-collapse: collapse; /* دمج الحدود */
+    }
+    
+    .table th, .table td {
+        border: 1px solid black; 
+        text-align: center; 
+    }
+    
+

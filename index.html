@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./leon.css">
+    <link rel="stylesheet" href="./bootstrap-4.0.0-dist (1)/css/bootstrap.css">
+    <title>Crud project</title>
+    
+</head>
+<body style="background-color: #222;">
+    <!-- start the head title -->
+    <div class="container text-center theTop mt-3">
+        <h2 style="font-weight: 700;cursor: pointer;"><i class="fa-solid fa-cloud-moon" onclick="TOGGLEICON()" id="Moon"></i>CRUD</h2>
+        <h3 style="cursor: pointer;">product management system</h3>
+    </div>
+    
+    <!-- start title input -->
+    <div class="container text-center">
+        <input type="text" placeholder="title" class="title w-100" id="title">
+    </div>
+
+    <!-- start four inputs -->
+    <div class="container">
+        <div class="row flex-four">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <input type="number" onkeyup="gettotal()" placeholder="price" class="number1 w-100 m-2" id="price">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <input type="number" placeholder="taxes" onkeyup="gettotal()" class="number1 w-100 m-2" id="taxes">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <input type="number" placeholder="ads" onkeyup="gettotal()" class="number1 w-100 m-2" id="ads">
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+                <input type="number" placeholder="discount" onkeyup="gettotal()" class="number1 w-100 m-2" id="discount">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <button class="btn btn-dark mt-2" id="small"class="btn btn-dark" style="color: white; background-color: black;">total:</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- start two inputs+ big button -->
+    <div class="container">
+        <div class="row under">
+            <div class="col-12">
+                <input type="text" placeholder="count" class="number2 w-100" id="count">
+            </div>
+            <div class="col-12">
+                <input type="text" placeholder="category" class="number2 w-100" id="category">
+            </div>
+            <div class="col-12 text-center">
+                <button class="btn botn m-auto  " id="btnpapa">Create</button>
+            </div>
+            <div class="col-12">
+                <input type="text" onkeyup="TAKETOTOOK(this.value)" placeholder="search" class="number2 w-100" id="search">
+            </div>
+        </div>
+    </div>
+
+    <!-- start search buttons -->
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-6 col-sm-12">
+                <button class="botn2  mt-2" onclick="HANDALA(this.id)" id="searchbytitle">Search Title</button>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <button class="botn2 mt-2" onclick="HANDALA(this.id)" id="searchcategory">Search by category</button>
+            </div>
+            <div class="NNNNN col-12 text-center m-3">
+                <div class=" d-flex justify-content-center"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- start the table -->
+    <div class="container  m-auto d-block">
+        <table class="table ">
+            <thead class="">
+                <tr>
+                    <th>Product</th>
+                    <th>TITLE</th>
+                    <th>PRICE</th>
+                    <th>Taxes</th>
+                    <th>Ads</th>
+                    <th>Discount</th>
+                    <th>Total</th>
+                    <th>Category</th>
+                    <th>UPDATE</th>
+                    <th>DELETE</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+
+    <script src="bootstrap-4.0.0-dist (1)/js/popper.min.js"></script>
+    <script src="./bootstrap-4.0.0-dist (1)/js/jquery-3.7.1.min.js"></script>
+    <script src="./json.js"></script>
+</body>
+</html>
